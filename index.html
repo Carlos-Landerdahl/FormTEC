@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME | Formulário</title>
+    <link rel="shortcut icon" type="imagex/png" href="img/icones/code.ico">
+    <link rel="stylesheet" href="css/componentes/reset.css">
+    <link rel="stylesheet" href="css/componentes/base.css">
+    <link rel="stylesheet" href="css/componentes/img.css">
+    <link rel="stylesheet" href="css/componentes/cabecalho.css">
+    <link rel="stylesheet" href="css/componentes/inputAll.css">
+    <link rel="stylesheet" href="css/componentes/inputCheckBox.css">
+    <link rel="stylesheet" href="css/componentes/rodape.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="cabecalho">
+    <h1>Tecform</h1>
+      <p>Formulário sobre tecnologia</p>
+    </header>
+    <main>
+        <img class="img__robo" src="img/all/robo.png" title="Robô ilustrativo" alt="Imagem ilustrativa de um robô.">
+        <h2>Queremos saber mais sobre você</h2>
+        
+        <!--Inicio formulário-->
+
+        <form class="formulario container">
+            <div>
+                <h3>Seu nome</h3>
+                <input class="input__all" type="text">
+            </div>
+
+            <div>
+                <h3>Data de nascimento</h3>
+                <input class="input__all" type="date">
+            </div>
+
+            <div>
+                <h3>Seu e-mail</h3>
+                <input class="input__all"type="email" placeholder="conta@email.com.br">
+            </div>
+
+            <div>
+                <h3>Você está por dentro da area de ti? se sim me fale um pouco do que você gosta ou gostaria de aprender.</h3>
+                <textarea class="input__texto" name="Deixe sua opinião" id="textarea" cols="30" rows="10" placeholder="Deixe aqui sua opinião..."></textarea>
+            </div>
+
+            <!--Input do tipo ckeckbox-->
+
+            <fieldset class="input__checkbox" class="container">
+                <legend>Você tem experiência em algum dos itens abordados?</legend> 
+                <div class="checkbox">
+                    <input type="checkbox" id="chk1" class="checkbox" name="chk">
+                    <label for="chk1">
+                      JavaScript
+                    </label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input type="checkbox" id="chk2" class="checkbox" name="chk">
+                    <label for="chk2">
+                      Java
+                    </label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input type="checkbox" id="chk3" class="checkbox" name="chk">
+                    <label for="chk3">
+                      Phyton
+                    </label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input type="checkbox" id="chk4" class="checkbox" name="chk">
+                    <label for="chk4">
+                      PHP
+                    </label>
+                  </div>
+
+                  <div class="checkbox">
+                    <input type="checkbox" id="chk5" class="checkbox" name="chk">
+                    <label for="chk5">
+                      HTML5
+                    </label>
+                  </div>
+            </fieldset>
+            
+            <!-- Input do tipo roll -->
+
+            <div>
+                <h3>Você tem mais afinidade com Front-end ou Back-end?</h3>
+                <label for="">Back-end</label>
+                <input min="0" max="100" value="50" class="input__roll" type="range">
+            </div>
+            
+            <div>
+                <label for="">Front-end</label>
+                <input min="0" max="100" value="25" class="input__roll" type="range">
+            </div>
+            
+            <div>
+                <h3>Hoje oque você mudaria no aspecto social da nossa comunidade de tecnologia?</h3>
+                <textarea class="input__texto" name="Sua opinião" id="textarea" cols="30" rows="10" placeholder="Deixe aqui sua opinião..."></textarea>
+            </div>
+            
+            <!--Botão enviar-->
+
+            <input type="submit" value="Enviar formulário" class="enviar">
+        </form>
+    </main>
+    
+    <!--Seção RODAPÉ-->
+
+    <footer class="container rodape">
+      <ul class="rodape__social">
+        <li>
+          <a href="https://github.com/Carlos-Landerdahl" target="_blank" rel="external" class="rodape__social-midia" title="Github">
+          <img src="./img/icones/github.svg" alt="Ícone do Github, uma plataforma bem grande, com vários respositórios e um ótimo fóruns de discussão."></a>
+        </li>
+        
+        <li>
+          <a href="https://www.linkedin.com/in/carloslanderdahl" target="_blank" rel="external" class="rodape__social-midia" title="Linkedin">
+            <img src="./img/icones/linkedin.svg" alt="Ícone do LinkedInm, palataforma de rede social."></a>
+          </li>
+        
+          <li>
+          <a href="https://www.instagram.com/landerdahl_carlos/" target="_blank" rel="external" class="rodape__social-midia" title="Instagram">
+            <img src="./img/icones/instagram.svg" alt="Ícone do instagram, plataforma de rede social."></a>
+          </li>
+    </ul>
+    </footer>
+</body>
+</html>

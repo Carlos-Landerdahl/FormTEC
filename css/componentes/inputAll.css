@@ -1,0 +1,101 @@
+.formulario {
+    text-align: center;
+    
+    padding: auto;
+    margin: auto;
+}
+
+.input__all {
+    border-radius: 5px;
+    border: none;
+    box-shadow: 3px 3px 7px 1px rgba(0, 0, 0, 0.13);
+    
+    width: 15rem;
+    padding: 6px;
+    text-align: start;
+    
+    font-family: Share Tech, sans-serif;
+    font-size: 18px;
+}
+
+.input__texto {
+    width: 380px;
+    
+    padding: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 0,7rem;
+
+    font-size: 18px;
+    font-family: Share Tech, sans-serif;
+
+
+    border-radius: 10px 3px;
+    border-color: #2C394B;
+
+    box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.13);
+    outline: none;
+
+}
+
+.enviar {
+    width: 380px;
+    
+    margin: 40px auto 40px auto;
+    padding: 15px 0;
+    
+    background-color: #5f99bb;
+    color: white;
+    
+    font-weight: bold;
+    font-size: 18px;
+    
+    border: none;
+    border-radius: 5px;
+    
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.input__roll {
+  -webkit-appearance: none;
+  appearance: none;
+  
+  display: inline-block;
+  width: 18em;
+  
+  border-radius: 5px;
+  
+  background-color: #72f793;
+  outline: none;
+}
+
+.enviar:hover {
+    background: #81cefa;
+    transform: scale(1.1);
+}
+
+/**Responsividade**/
+
+@media screen and (min-width: 375px){
+    .input__texto{
+        width: 300px;
+    }
+    .enviar {
+        width: 280px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .input__texto{
+        width: 480px;
+    }
+    .enviar {
+        width: 380px;
+    }
+}
+
+
+
+
+
+
